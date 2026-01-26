@@ -1,0 +1,60 @@
+<!--FORMS
+    -Cpaturar dados de entrada
+    - Input -> Entrada
+    
+    Action -> define para qual url será enviado os dados, vazio envia para mesma url method
+        - GEST
+        - POST
+
+    Atributos importantes:
+    - autocomplete -> sugere dados já preenchidos
+    - autofocus -> foca no campo automaticamente
+    - placeholder -> texto de exemplo dentro do input
+    - name -> nome do campo, importante para identificar os dados enviados
+    - enctype -> define o tipo de codificação dos dados enviados (usado com POST)
+        - application/x-www-form-urlencoded -> padrão
+        - multipart/form-data -> usado para upload de arquivos
+        - text/plain -> envia os dados como texto simples    
+        -->
+
+<form action="" method="get" enctype="multipart/form-data">
+    <h2>Método GET</h2>
+    <h1>Digite seu endereço:</h1>
+    <label>Rua:
+        <input type="text" name="rua" autocomplete="street-address">
+    </label>
+
+    <label>Número:
+        <input type="number" name="numero" autocomplete="address-line2">
+    </label>
+
+    <label>CEP:
+        <input type="number" name="cep" autocomplete="postal-code">
+    </label>
+    <label>E-mail:
+        <input type="email" name="email" autocomplete="email">
+    </label>
+
+    <button type="submit">Enviar dados</button>
+</form>
+
+<form action="" method="post">
+    <h2>Método POST</h2>
+    <h1>Digite seus dados de login:</h1>
+    <label>Usuário:
+        <input type="text" name="usuario" autocomplete="username">
+    </label>
+
+    <label>Senha:
+        <input type="password" name="senha" autocomplete="current-password">
+    </label>
+    <label>CEP
+        <input type="number" name="cep" autocomplete="postal-code">
+    </label>
+    <label>E-mail:
+        <input type="email" name="email" autocomplete="email">
+
+    </label>
+
+    <button type="submit">Enviar dados</button>
+</form>
