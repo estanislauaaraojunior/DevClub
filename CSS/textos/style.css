@@ -1,0 +1,41 @@
+   /* Importação da fonte Roboto do Google Fonts */
+   @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+    
+    h1 {
+        color: red;
+        background-color: yellow;
+        text-shadow: 10px 5px 15px gray; /* sombra do texto */
+    }
+    p {
+        color: blue;    /* color del texto */
+        font-size: 30px;        /* tamanho de fuente */
+        font-weight: 900;       /* negrita */
+        font-family: 'roboto', sans-serif; /* tipo de fonte */
+        font-style: italic;    /* cursiva */
+        line-height: 120px;    /* altura de linha */
+        letter-spacing: 10px; /* espaço entre letras */
+        text-align: justify;    /* alinhamento do texto */
+        text-transform: capitalize; /* transforma a primeira letra de cada palavra em maiúscula */
+        text-decoration: overline; /* linha sobre o texto */
+        text-decoration: underline; /* linha sublinhada */
+
+    }
+
+    button {
+        background: red;    /* color de fondo */
+        border-color: black;    /* color del borde */
+        font-size: 20px;        /* tamaño de fonte */
+        font-family: 'roboto', sans-serif; /* tipo de fonte */
+        line-height: 120px;    /* altura de linha */
+    }
+
+    #titulo {
+        color: green;
+        background-color: lightgray;
+    }
+
+    .texto {
+        color: purple;
+        font-size: 25px;
+    }

@@ -1,0 +1,24 @@
+.box {
+    width: 80px;
+    height: 80px;   
+    background: pink;
+    padding: 20px;  /* Espaçamento interno */
+    margin: 20px;   /* Espaçamento externo */
+}
+
+.box2 {
+    width: 50px;
+    height: 50px;   
+    background: lightblue;
+    padding: 20px;  /* Espaçamento interno */
+    margin: 20px;   /* Espaçamento externo */
+    margin-top: 100px; /* Margem superior maior */
+    margin-bottom: 50px; /* Margem inferior maior */
+    margin-left: 150px; /* Margem esquerda maior */
+    margin-right: 20px; /* Margem direita menor */
+
+    margin: 100px 20px 50px 150px; /* Margens na ordem: cima, direita, baixo, esquerda */
+    padding: 10px 5px 15px 20px; /* Padding na ordem: cima, direita, baixo, esquerda */
+    /*Se vc tiver 3 valores, o primeiro é para cima e o último para baixo e o do meio é para os lados*/
+    /*Se vc tiver 2 valores, o primeiro é para cima e baixo e o segundo para os lados*/
+}
