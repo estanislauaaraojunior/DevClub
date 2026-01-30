@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+.div-global {
+    font-family: "Roboto", sans-serif;
+
+}
+
+.div-cabeçalho {
+    display: flex;
+    background-color: #ffffff;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.div-menu {
+    font-size: 16px;
+    padding: 0px 30px 0px 0px;
+
+}
