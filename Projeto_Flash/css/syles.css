@@ -211,3 +211,8 @@ ul {
         width: 80%;
     }
 }
+
+.img-slide-1 {
+
+    align-items: flex-start;
+}
