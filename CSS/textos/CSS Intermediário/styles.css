@@ -1,0 +1,37 @@
+/* Vamos falar sobre POSITION*/
+/* Existem 5 tipos de position no CSS:
+   1. static (padrão) - Não aceita valores do tipo top, bottom, left e right
+   2. relative - Elemento fica na posição relativa a oriinal dele. Aceita valores do tipo top, bottom, left e right
+   3. absolute - aceita valores do tipo top, bottom, left e right
+   4. fixed - aceita valores do tipo top, bottom, left e right
+   5. sticky - aceita valores do tipo top, bottom, left e right
+*/
+
+
+
+* {
+    margin: 0; 
+    padding: 0;
+    height: 200vh;
+    width: 200vh;
+}
+
+.div-dad {
+    height: 350px;  
+    width: 350px;
+    background-color: pink;   
+}
+
+.div-son {
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+}
+
+.outra-div {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+}
+
+.
