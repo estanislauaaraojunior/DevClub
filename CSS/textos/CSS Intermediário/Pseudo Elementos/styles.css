@@ -1,0 +1,37 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+input {
+    border: 2px solid red;
+    color: blue;
+}
+
+input::placeholder {       /* Pseudo Elemento  do campo input */
+    color: green;
+}
+
+p {
+    color: black;
+}
+
+p::first-letter {         /* Pseudo Elemento do primeira letra */
+    font-size: 200%;
+    color: orange;
+}
+
+p::first-line {           /* Pseudo Elemento da primeira linha */
+    font-weight: bold;
+}
+
+a::after {              /* Pseudo Elemento depois do link */
+    content: " (link externo)";
+    color: gray;
+    font-size: 80%;
+}
+
+a::before {             /* Pseudo Elemento antes do link */
+    content: "👉 ";
+}
