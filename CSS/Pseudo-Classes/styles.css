@@ -40,3 +40,7 @@ input:focus{
     height: 100px;
     width: 100px;    
 }
+
+li:last-child {
+    color: red;
+}

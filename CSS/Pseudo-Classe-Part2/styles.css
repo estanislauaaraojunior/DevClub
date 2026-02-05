@@ -1,0 +1,31 @@
+
+
+
+
+li:first-child {    /* first child, seleciona o primeiro item da lista */
+    color: red;
+}
+
+li:last-child {     /* last child, seleciona o último item da lista */
+    color: blue;
+}
+
+.container p:first-of-type {   /* first of type, seleciona o primeiro parágrafo dentro do container */
+    font-weight: bold;
+}
+
+.container :not(p) {    /* not, seleciona todos os elementos que não são parágrafos dentro do container */
+    color: green
+}
+
+.container :not(.excluido) {    /* not com classe, seleciona todos os elementos que não possuem a classe "excluido" dentro do container */
+    color: orange;
+}
+
+li:nth-child(2) {    /* nth-child, seleciona o segundo item da lista */
+    text-decoration: underline;
+}   
+
+li:nth-last-child(4) {    /* nth-last-child, seleciona o quarto item da lista contando a partir do final */
+    font-style: italic;
+}
