@@ -1,0 +1,42 @@
+/* Reset CSS  */
+
+/* Active - quando o link está sendo clicado */
+/* Visited - quando o link já foi visitado */
+/* Hover - quando o mouse está sobre o link */
+/*checked - quando o input está selecionado */
+/* focus - quando o input está em foco */
+/* read-only - quando o input está somente leitura */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+a:hover{
+    color: green;
+}
+
+a:visited{
+    color: red;
+}
+
+a:hover{
+    color: blue;
+}
+
+input:checked{
+    border: 2px solid orange;
+}
+
+input:focus{
+    border: 1px solid purple;
+    outline: none;  /* Remove a borda padrão do foco */
+}
+
+
+.container{
+    height: 100px;
+    width: 100px;    
+}
