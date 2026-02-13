@@ -8,15 +8,36 @@
     box-sizing: border-box;     /* Define o modelo de caixa para incluir bordas e preenchimento */
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .section-header {
     padding: 20px 10px;     /* Espaçamento interno da seção do cabeçalho */
 }
 
-.div-header {
-    display: flex; 
+header {
+    padding: 20px 10px;     /* Espaçamento interno do header */
+    position: fixed;        /* Fixa o header no topo da página */
+    top: 0;
+    left: 0;
     width: 100%;
+    background-color: #ffffff; /* Cor de fundo do header */
+    z-index: 10;            /* Garante que o header fique acima de outros elementos */
+}
+
+.nav-header {
+    font-size: 18px;    
+    display: flex; 
+    max-width: 100%;
+    max-height: auto;
     align-items: center; /* Centraliza verticalmente no desktop */
-    flex-wrap: wrap; /* Permite quebrar linha se não couber */
+}
+
+.div-slides {
+    top: 0;
+    z-index: -1;
 }
 
 .div-logo {
@@ -31,7 +52,6 @@
 }
 
 .div-menu {
-    font-size: 18px;
     padding: 0px 20px 0px 50px;
     max-width: 100%;    
     display: flex;            /* Ativa o flexbox no container */
@@ -57,6 +77,9 @@ ul {
     overflow: hidden; /* Garante que a linha venha "de dentro" do elemento */
 }
 
+
+                            /*Navegação do menu*/
+
 /* Criando a linha invisível acima da posição final */
 .nav-menu::after {
     content: '';
@@ -71,15 +94,27 @@ ul {
     transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
+/* No hover, ela desce para a posição original (0) e aparece */
 .nav-menu:hover {
     color: #007aff;
 }
 
-/* No hover, ela desce para a posição original (0) e aparece */
-.nav-menu:hover::after {
+.nav-menu:hover::after {        
     transform: translateY(0);
     opacity: 1;
 }
+
+.btn-cliente:hover {
+    transform: scale(1.1);     /*Aumentamos a escala em 1.1x (10%) */
+    color: #007aff; 
+}
+
+.btn-fatura:hover {
+    transition: transform 0.5s;
+    transform: scale(1.1);    
+}
+
+/*-------------------------------------------------------------*/
 
 .area-cliente {
     max-width: 100%;
@@ -91,7 +126,6 @@ ul {
     gap: 20px;
     border-left: 3px solid #007aff; /* Espessura, Estilo e Cor */
 }
-
 
 .btn-cliente {
     font-size: 18px;     
@@ -122,10 +156,7 @@ ul {
     cursor: pointer;
 }
 
-.btn-fatura:hover {
-    transition: transform 0.5s;
-    transform: scale(1.1);    
-}
+
 
 @media (max-width: 768px) {
     .div-header {
