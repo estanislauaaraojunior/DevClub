@@ -2,37 +2,48 @@
 
 /*RESET CSS*/
 * {
-    font-family: "Roboto", sans-serif;      /* Fonte padrão do projeto */
-    margin: 0;      /* Remove margens padrão */
-    padding: 0;     /* Remove espaçamentos padrão */
-    box-sizing: border-box;     /* Define o modelo de caixa para incluir bordas e preenchimento */
+    font-family: "Roboto", sans-serif;
+    /* Fonte padrão do projeto */
+    margin: 0;
+    /* Remove margens padrão */
+    padding: 0;
+    /* Remove espaçamentos padrão */
+    box-sizing: border-box;
+    /* Define o modelo de caixa para incluir bordas e preenchimento */
 }
 
-html, body {
+html,
+body {
     max-width: 100%;
     overflow-x: hidden;
 }
 
 .section-header {
-    padding: 20px 10px;     /* Espaçamento interno da seção do cabeçalho */
+    padding: 20px 10px;
+    /* Espaçamento interno da seção do cabeçalho */
 }
 
 header {
-    padding: 20px 10px;     /* Espaçamento interno do header */
-    position: fixed;        /* Fixa o header no topo da página */
+    padding: 20px 10px;
+    /* Espaçamento interno do header */
+    position: fixed;
+    /* Fixa o header no topo da página */
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #ffffff; /* Cor de fundo do header */
-    z-index: 10;            /* Garante que o header fique acima de outros elementos */
+    background-color: #ffffff;
+    /* Cor de fundo do header */
+    z-index: 10;
+    /* Garante que o header fique acima de outros elementos */
 }
 
 .nav-header {
-    font-size: 18px;    
-    display: flex; 
+    font-size: 18px;
+    display: flex;
     max-width: 100%;
     max-height: auto;
-    align-items: center; /* Centraliza verticalmente no desktop */
+    align-items: center;
+    /* Centraliza verticalmente no desktop */
 }
 
 .div-slides {
@@ -41,55 +52,70 @@ header {
 }
 
 .div-logo {
-    align-content: center;      /* Alinha o conteúdo ao centro */
-    align-items: center;        /* Alinha os itens ao centro */
-    padding: 0px 0px 0px 80px;      /* Espaçamento interno do logo */
-}   
+    align-content: center;
+    /* Alinha o conteúdo ao centro */
+    align-items: center;
+    /* Alinha os itens ao centro */
+    padding: 0px 0px 0px 80px;
+    /* Espaçamento interno do logo */
+}
 
 .logo {
-    width: 225px;       /* Largura do logo */
-    height: auto;       /* Altura automática para manter a proporção */
+    width: 225px;
+    /* Largura do logo */
+    height: auto;
+    /* Altura automática para manter a proporção */
 }
 
 .div-menu {
     padding: 0px 20px 0px 50px;
-    max-width: 100%;    
-    display: flex;            /* Ativa o flexbox no container */
-    height: 80px;             /* Defina uma altura para ter espaço de manobra */
-    align-items: flex-end;    /* Alinha o conteúdo (o ul) no fundo da div */
-    padding-bottom: 10px;     /* Ajuste fino para não encostar totalmente no chão */
+    max-width: 100%;
+    display: flex;
+    /* Ativa o flexbox no container */
+    height: 80px;
+    /* Defina uma altura para ter espaço de manobra */
+    align-items: flex-end;
+    /* Alinha o conteúdo (o ul) no fundo da div */
+    padding-bottom: 10px;
+    /* Ajuste fino para não encostar totalmente no chão */
 }
 
 ul {
-    display: flex;   
+    display: flex;
     list-style-type: none;
     gap: 20px;
-    margin-left: 0; /* REMOVA os 200px fixos */
+    margin-left: 0;
+    /* REMOVA os 200px fixos */
 }
 
 .nav-menu {
-    position: relative; /* Necessário para ancorar a linha */
+    position: relative;
+    /* Necessário para ancorar a linha */
     display: inline-block;
-    padding: 0px 15px 10px 15px; /* Aumentei o bottom para dar espaço ao movimento */
-    color: #333;        
+    padding: 0px 15px 10px 15px;
+    /* Aumentei o bottom para dar espaço ao movimento */
+    color: #333;
     text-decoration: none;
     transition: color 0.3s ease;
-    overflow: hidden; /* Garante que a linha venha "de dentro" do elemento */
+    overflow: hidden;
+    /* Garante que a linha venha "de dentro" do elemento */
 }
 
 
-                            /*Navegação do menu*/
+                    /*Navegação do menu*/
 
 /* Criando a linha invisível acima da posição final */
 .nav-menu::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: 0; /* Posição final */
+    bottom: 0;
+    /* Posição final */
     width: 100%;
     height: 3px;
-    background-color: #007aff;        
-    transform: translateY(-8px); /*Começa deslocada para cima e invisível */
+    background-color: #007aff;
+    transform: translateY(-8px);
+    /*Começa deslocada para cima e invisível */
     opacity: 0;
     transition: transform 0.5s ease, opacity 0.5s ease;
 }
@@ -99,47 +125,53 @@ ul {
     color: #007aff;
 }
 
-.nav-menu:hover::after {        
+.nav-menu:hover::after {
     transform: translateY(0);
     opacity: 1;
 }
 
 .btn-cliente:hover {
-    transform: scale(1.1);     /*Aumentamos a escala em 1.1x (10%) */
-    color: #007aff; 
+    transform: scale(1.1);
+    /*Aumentamos a escala em 1.1x (10%) */
+    color: #007aff;
 }
 
 .btn-fatura:hover {
     transition: transform 0.5s;
-    transform: scale(1.1);    
+    transform: scale(1.1);
 }
 
 /*-------------------------------------------------------------*/
 
 .area-cliente {
     max-width: 100%;
-    color: white;       /*Cor da fonte*/     
-    padding: 30px 30px 10px 20px;        
+    color: white;
+    /*Cor da fonte*/
+    padding: 30px 30px 10px 20px;
     text-decoration: none;
     align-content: center;
     display: flex;
     gap: 20px;
-    border-left: 3px solid #007aff; /* Espessura, Estilo e Cor */
+    border-left: 3px solid #007aff;
+    /* Espessura, Estilo e Cor */
 }
 
 .btn-cliente {
-    font-size: 18px;     
-    color: #363333; 
+    font-size: 18px;
+    color: #363333;
     background: transparent;
     border: none;
     cursor: pointer;
-    display: inline-block; /* Necessário para que o transform funcione corretamente */
-    transition: transform 0.3s ease, color 0.3s ease;  /* Define o que será animado e o tempo (0.3 segundos) */
+    display: inline-block;
+    /* Necessário para que o transform funcione corretamente */
+    transition: transform 0.3s ease, color 0.3s ease;
+    /* Define o que será animado e o tempo (0.3 segundos) */
 }
 
 .btn-cliente:hover {
-    transform: scale(1.1);     /*Aumentamos a escala em 1.1x (10%) */
-    color: #363333; 
+    transform: scale(1.1);
+    /*Aumentamos a escala em 1.1x (10%) */
+    color: #363333;
 }
 
 .btn-fatura {
@@ -156,55 +188,64 @@ ul {
     cursor: pointer;
 }
 
-
-
 @media (max-width: 768px) {
     .div-header {
-        flex-direction: column; /* Empilha os elementos um embaixo do outro */
+        flex-direction: column;
+        /* Empilha os elementos um embaixo do outro */
         align-items: center;
         gap: 20px;
     }
 
     .div-logo {
-        padding: 0; /* Remove o recuo do logo no mobile */
+        padding: 0;
+        /* Remove o recuo do logo no mobile */
     }
 
     .div-menu {
-        height: auto; /* Remove a altura fixa de 80px */
+        height: auto;
+        /* Remove a altura fixa de 80px */
         padding: 0;
     }
 
     ul {
-        flex-direction: column; /* Lista de itens vertical */
+        flex-direction: column;
+        /* Lista de itens vertical */
         align-items: center;
         margin-left: 0;
         gap: 10px;
     }
 
     .area-cliente {
-        border-left: none; /* Remove a borda lateral no mobile */
-        border-top: 3px solid #007aff; /* Coloca a borda no topo para separar */
+        border-left: none;
+        /* Remove a borda lateral no mobile */
+        border-top: 3px solid #007aff;
+        /* Coloca a borda no topo para separar */
         padding: 20px 0;
-        flex-direction: column; /* Botões um sobre o outro */
+        flex-direction: column;
+        /* Botões um sobre o outro */
         width: 100%;
         align-items: center;
     }
 
     .nav-menu::after {
-        display: none; /* Opcional: remove a linha deslizante no toque (mobile) */
+        display: none;
+        /* Opcional: remove a linha deslizante no toque (mobile) */
     }
 }
 
 /* Esconde o checkbox e o ícone no Desktop */
-.menu-checkbox, .menu-icon {
+.menu-checkbox,
+.menu-icon {
     display: none;
 }
 
 @media (max-width: 768px) {
+
     /* 1. Container agora começa acima da tela */
     .nav-container {
         position: absolute;
-        top: -100vh; /* Esconde totalmente para cima (100% da altura da tela) */
+        top: -100vh;
+        /* Esconde totalmente para cima (100% da altura da tela) */
         left: 0;
         width: 100%;
         background: #ffffff;
@@ -212,14 +253,16 @@ ul {
         flex-direction: column;
         align-items: center;
         padding: 40px 0;
-        transition: all 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Efeito elástico opcional */
+        transition: all 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        /* Efeito elástico opcional */
         z-index: 8;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     /* 2. Quando clicado, ele desce para logo abaixo do header */
-    .menu-checkbox:checked ~ .nav-container {
-        top: 80px; /* Ajuste para a altura exata do seu header fixo */
+    .menu-checkbox:checked~.nav-container {
+        top: 80px;
+        /* Ajuste para a altura exata do seu header fixo */
     }
 
     /* 3. Estilo da lista para mobile */
@@ -227,7 +270,8 @@ ul {
         flex-direction: column;
         align-items: center;
         gap: 25px;
-        margin-left: 0 !important; /* Remove o margin do desktop */
+        margin-left: 0 !important;
+        /* Remove o margin do desktop */
         width: 100%;
     }
 
